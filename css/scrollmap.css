@@ -1,0 +1,33 @@
+#map {
+   position:fixed;
+   height: 100%;
+   width: 70%;
+   top: 0; bottom: 0;
+     width: 100%;
+}
+#features {
+    position: relative;
+   width: 30%;
+   margin-left: 50%;
+   margin-right: 20%;
+   font-family: sans-serif;
+   background-color: #fafafa4b;
+}
+section {
+   padding: 25px 50px;
+   line-height: 25px;
+   border-top: 50px solid rgba(221, 221, 221, 0);
+   border-bottom: 50px solid rgba(221, 221, 221, 0);
+   opacity: 0.25;
+   font-size: 13px;
+}
+section.active {
+   opacity: 1;
+}
+section:first-child{
+    border-top: none;
+}
+section:last-child {
+   border-bottom: none;
+   margin-bottom: 200px;
+}
