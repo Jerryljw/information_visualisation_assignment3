@@ -20,7 +20,7 @@ const chapters = {
         },
         layer: {
             route: {
-                "id":"jerryluojiawei.bhbyhqip",
+                "id":"city-circle-tram-route",
                 "type": "line",
                 "source": {
                     "type": "vector",
@@ -37,7 +37,7 @@ const chapters = {
                     },
             },
             stops: {
-                "id":"jerryluojiawei.bbm7j752",
+                "id":"city-circle-tram-stops",
                 "type": "circle",
                 "source": {
                     "type": "vector",
@@ -105,7 +105,7 @@ function setActiveChapter(chapterName) {
     activeChapterName = chapterName;
 }
 function setActiveMapElements(chapterName){
-
+    
 }
 function deActiveMapElements(chapterName){
     
@@ -126,15 +126,19 @@ map.on("load", async function(){
                 console.log("add tram");
                 map.addLayer(chapters[chapterName].layer.route)
                 map.addLayer(chapters[chapterName].layer.stops)
+                console.log(document.getElementsByClassName("active")[0].attributes.id.value);
+                break;
             }
         }
     }
-})
-window.onscroll = () => {
-    for (const chapterName in chapters) {
-        if (isElementOnScreen(chapterName)) {
-            setActiveChapter(chapterName);
-            break;
+    window.onscroll = () => {
+        for (const chapterName in chapters) {
+            if (isElementOnScreen(chapterName)) {
+                setActiveChapter(chapterName);
+                setActiveMapElements(chapterName);
+                break;
+            }
         }
-    }
-};
+    };
+})
+
