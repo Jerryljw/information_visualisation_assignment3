@@ -1,15 +1,21 @@
-#map {
+#map-container #map {
    position:fixed;
    height: 100%;
-   width: 70%;
    top: 0; bottom: 0;
-     width: 100%;
+   width: 100%;
+}
+#chartContainer{
+   position:fixed;
+   height: 200;
+   width: 200;
+   margin-top: 10rem;
+   color: rgba(0, 0, 255, 0.459);
 }
 #features {
-    position: relative;
+   position: relative;
    width: 30%;
-   margin-left: 50%;
-   margin-right: 20%;
+   margin-left: 65%;
+   margin-right: 5%;
    font-family: sans-serif;
    background-color: #fafafa4b;
 }
@@ -28,5 +34,22 @@ section:first-child{
 }
 section:last-child {
    border-bottom: none;
-   margin-bottom: 200px;
+   margin-bottom: 500px;
 }
+.point-legend-key {
+   background-color: #336699;
+   display: inline-block;
+   border-radius: 20%;
+   width: 10px;
+   height: 10px;
+   margin-right: 5px;
+ }
+
+ .line-legend-key {
+   background-color: #99CCCC;
+   display: inline-block;
+   border-radius: 20%;
+   width: 10px;
+   height: 10px;
+   margin-right: 5px;
+ }
