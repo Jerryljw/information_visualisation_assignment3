@@ -4,13 +4,7 @@
    top: 0; bottom: 0;
    width: 100%;
 }
-#chartContainer{
-   position:fixed;
-   height: 200;
-   width: 200;
-   margin-top: 10rem;
-   color: rgba(0, 0, 255, 0.459);
-}
+
 #features {
    position: relative;
    width: 30%;

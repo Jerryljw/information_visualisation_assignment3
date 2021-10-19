@@ -49,6 +49,10 @@ const chapters = {
                     'circle-color': "#336699"
                 }
             },
+        },
+        setting:{
+            'chartid': 'circle-chart',
+            'chart': 'hide',
         }
     },
     'tram-24hours': {
@@ -71,7 +75,7 @@ const chapters = {
                 "source-layer": "Tram_tracks-71l9ar",
                 "paint": {
                     'line-color':"#99CCCC",
-                    'line-width': 1,
+                    'line-width': 2,
                 },
                 'layout': {
                     'line-join': 'round',
@@ -91,6 +95,10 @@ const chapters = {
                     'circle-color': "#336699"
                 }
             },
+        },
+        setting:{
+            'chartid': 'tram-chart',
+            'chart': 'hide',
         }
     },
     'bus-week': {
@@ -113,6 +121,10 @@ const chapters = {
                     'circle-color': "#336699"
                 }
             },
+        },
+        setting:{
+            'chartid': 'bus-week-chart',
+            'chart': 'hide',
         }
     },
     'bus-day': {
@@ -134,7 +146,7 @@ const chapters = {
                 "source-layer": "Tram_tracks-71l9ar",
                 "paint": {
                     'line-color':"#99CCCC",
-                    'line-width': 1,
+                    'line-width': 2,
                 },
                 'layout': {
                     'line-join': 'round',
@@ -154,13 +166,17 @@ const chapters = {
                     'circle-color': "#336699"
                 }
             },
+        },
+        setting:{
+            'chartid': 'bus-day-chart',
+            'chart': 'hide',
         }
     },
     'bike-trends': {
         locations:{
             bearing: 0,
-            center: [144.979107, -37.821317],
-            zoom: 11.98,
+            center: [144.963218, -37.812152],
+            zoom: 11.75,
             pitch: 0,
         },layers: {
             'tracks':{
@@ -174,13 +190,17 @@ const chapters = {
                 "source-layer": "Bicycle_routes_including_info-dplwcs",
                 "paint": {
                     'line-color':"#99CCCC",
-                    'line-width': 1,
+                    'line-width': 2,
                 },
                 'layout': {
                     'line-join': 'round',
                     'line-cap': 'round'
                     },
             },
+        },
+        setting:{
+            'chartid': 'bike-trend-chart',
+            'chart': 'hide',
         }
     },
     'bike-ranks': {
@@ -201,7 +221,7 @@ const chapters = {
                 "source-layer": "Bicycle_routes_including_info-dplwcs",
                 "paint": {
                     'line-color':"#99CCCC",
-                    'line-width': 1,
+                    'line-width': 2,
                 },
                 'layout': {
                     'line-join': 'round',
@@ -221,9 +241,19 @@ const chapters = {
                     'circle-color': "#336699"
                 }
             },
+        },
+        setting:{
+            'chartid': 'bike-ranks-chart',
+            'chart': 'hide',
         }
     },
 };
+
+function setCharts(chapterName) {
+    let chart_setting = chapters[chapterName].setting;
+
+
+}
 
 // first active element
 let activeChapterName = 'city-circle-tram';
@@ -236,22 +266,27 @@ function setActiveChapter(chapterName) {
     document.getElementById(chapterName).classList.add('active');
     document.getElementById(activeChapterName).classList.remove('active');
     
+    // set the last chapter inactive
     for(const l in chapters[activeChapterName].layers){
         const deActiveLayerId = chapters[activeChapterName].layers[l].id;
         map.setLayoutProperty(deActiveLayerId, 'visibility', 'none');
     }
+
+    // set current chapter active(visible)
     activeChapterName = chapterName;
     for(const l in chapters[activeChapterName].layers){
         const ActiveLayerId = chapters[activeChapterName].layers[l].id;
         map.setLayoutProperty(ActiveLayerId, 'visibility', 'visible');
     }
+
+
 }
 // add active map element
 function addActiveMapElements(chapterName){
     for(const l in chapters[chapterName].layers) {
         map.addLayer(chapters[chapterName].layers[l]);
     }
-    console.log(document.getElementsByClassName("active")[0].attributes.id.value);
+    //console.log(document.getElementsByClassName("active")[0].attributes.id.value);
 }
 // add non-active map element
 function addDeActiveMapElements(chapterName){
@@ -291,7 +326,7 @@ map.on("load", async function(){
     window.onscroll = () => {
         for (const chapterName in chapters) {
             if (isElementOnScreen(chapterName)) {
-                console.log(chapterName);
+                //console.log(chapterName);
                 setActiveChapter(chapterName);
                 break;
             }
