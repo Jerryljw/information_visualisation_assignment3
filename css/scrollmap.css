@@ -3,13 +3,16 @@
    height: 100%;
    top: 0; bottom: 0;
    width: 100%;
+   z-index: 0;
 }
-
+#map-container{
+   z-index: 1;
+}
 #features {
    position: relative;
    width: 30%;
-   margin-left: 65%;
-   margin-right: 5%;
+   margin-left: 70%;
+   /* margin-right: 5%; */
    font-family: sans-serif;
    background-color: #fafafa4b;
 }

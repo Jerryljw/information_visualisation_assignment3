@@ -23,16 +23,31 @@ body {
     height: 75%;
     width: 55%;
     margin-left: 5%;
-    color: rgba(0, 0, 255, 0.459);
-    background-color: #85bccaa9;
+    margin-top: 2%;
+    /* color: rgba(162, 162, 230, 0.459); */
+    background-color: #fafafa4b;
+    z-index: 10;
  }
+ .startpageContainer{
+    position:fixed;
+    height: 100%;
+    width: 70%;
+    /* margin-left: 5%;
+    margin-top: 2%; */
+    color: rgb(0, 0, 0);
+    background-color: #fafafa4b;
+    z-index: 10;
+ 
+  text-align: center
+ }
+
  .verticalchartContainer{
     position:fixed;
     height: 80%;
     width: 36%;
     margin-left: 2%;
-    color: rgba(0, 0, 255, 0.459);
-    background-color: #85bccaa9;
+    /* color: rgba(0, 0, 255, 0.459); */
+    background-color: #fafafa4b;
  }
 
 #container2{
