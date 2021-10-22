@@ -75,9 +75,9 @@ tram_combine_myChart.setOption(tram_combine_option);
 
 tram_combine_chartDom.style.position = 'fixed';
 tram_combine_chartDom.style.height = '75%';
-tram_combine_chartDom.style.width = '55%';
+tram_combine_chartDom.style.width = '60%';
 tram_combine_chartDom.style.marginLeft = '5%';
 tram_combine_chartDom.style.marginTop = '2%';
-tram_combine_chartDom.style.backgroundColor = '#fafafa4b';
+tram_combine_chartDom.style.backgroundColor = '#fafafab6';
 tram_combine_chartDom.style.zIndex = '10';
 tram_combine_chartDom.style.display = "none";

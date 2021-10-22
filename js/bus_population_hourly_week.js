@@ -15,7 +15,7 @@ bus_phw_option = {
     trigger: 'axis'
   },
   legend: {
-    
+    selectedMode:false,
     data: [
       'Monday',
       'Tuesday',
@@ -169,9 +169,9 @@ if (bus_phw_option && typeof bus_phw_option === 'object') {
 }
 bus_phw_chartDom.style.position = 'fixed';
 bus_phw_chartDom.style.height = '75%';
-bus_phw_chartDom.style.width = '65%';
+bus_phw_chartDom.style.width = '60%';
 bus_phw_chartDom.style.marginLeft = '5%';
 bus_phw_chartDom.style.marginTop = '2%';
-bus_phw_chartDom.style.backgroundColor = '#fafafa4b';
+bus_phw_chartDom.style.backgroundColor = '#fafafab6';
 bus_phw_chartDom.style.zIndex = '10';
 bus_phw_chartDom.style.display = "none";

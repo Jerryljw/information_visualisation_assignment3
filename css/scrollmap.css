@@ -14,7 +14,7 @@
    margin-left: 70%;
    /* margin-right: 5%; */
    font-family: sans-serif;
-   background-color: #fafafa5e;
+    background-color: #30303081;
 }
 section {
    padding: 25px 50px;
@@ -49,4 +49,10 @@ section:last-child {
    width: 10px;
    height: 10px;
    margin-right: 5px;
+ }
+ #start-scroll{
+     font-size: 2.0em;
+ }
+ h3{
+     font-size: 2.0em;
  }

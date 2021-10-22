@@ -120,9 +120,9 @@ bus_departures_myChart.setOption(bus_departures_option);
 
 bus_departures_chartDom.style.position = 'fixed';
 bus_departures_chartDom.style.height = '75%';
-bus_departures_chartDom.style.width = '55%';
+bus_departures_chartDom.style.width = '60%';
 bus_departures_chartDom.style.marginLeft = '5%';
 bus_departures_chartDom.style.marginTop = '2%';
-bus_departures_chartDom.style.backgroundColor = '#fafafa4b';
+bus_departures_chartDom.style.backgroundColor = '#fafafab6';
 bus_departures_chartDom.style.zIndex = '10';
 bus_departures_chartDom.style.display = "none";

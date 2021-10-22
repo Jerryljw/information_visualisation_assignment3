@@ -74,9 +74,9 @@ if (bus_spw_option && typeof bus_spw_option === 'object') {
 }
 bus_spw_chartDom.style.position = 'fixed';
 bus_spw_chartDom.style.height = '75%';
-bus_spw_chartDom.style.width = '65%';
+bus_spw_chartDom.style.width = '60%';
 bus_spw_chartDom.style.marginLeft = '5%';
 bus_spw_chartDom.style.marginTop = '2%';
-bus_spw_chartDom.style.backgroundColor = '#fafafa4b';
+bus_spw_chartDom.style.backgroundColor = '#fafafab6';
 bus_spw_chartDom.style.zIndex = '10';
 bus_spw_chartDom.style.display = "none";
