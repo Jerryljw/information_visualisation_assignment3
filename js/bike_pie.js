@@ -104,3 +104,4 @@ bike_pie_chartDom.style.marginLeft = '2%';
 bike_pie_chartDom.style.backgroundColor = '#fafafab6';
 bike_pie_chartDom.style.zIndex = '10';
 bike_pie_chartDom.style.display = "none";
+
