@@ -174,4 +174,4 @@ bus_phw_chartDom.style.marginLeft = '5%';
 bus_phw_chartDom.style.marginTop = '2%';
 bus_phw_chartDom.style.backgroundColor = '#fafafab6';
 bus_phw_chartDom.style.zIndex = '10';
-bus_phw_chartDom.style.display = "none"
+bus_phw_chartDom.style.display = "none";

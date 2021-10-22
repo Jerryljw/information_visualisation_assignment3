@@ -79,4 +79,4 @@ bus_spw_chartDom.style.marginLeft = '5%';
 bus_spw_chartDom.style.marginTop = '2%';
 bus_spw_chartDom.style.backgroundColor = '#fafafab6';
 bus_spw_chartDom.style.zIndex = '10';
-bus_spw_chartDom.style.display = "none"
+bus_spw_chartDom.style.display = "none";
