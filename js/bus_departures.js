@@ -125,4 +125,4 @@ bus_departures_chartDom.style.marginLeft = '5%';
 bus_departures_chartDom.style.marginTop = '2%';
 bus_departures_chartDom.style.backgroundColor = '#fafafa4b';
 bus_departures_chartDom.style.zIndex = '10';
-bus_departures_chartDom.style.display = "none"
+bus_departures_chartDom.style.display = "none";

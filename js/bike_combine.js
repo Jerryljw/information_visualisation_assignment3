@@ -157,4 +157,4 @@ bike_combine_chartDom.style.width = '36%';
 bike_combine_chartDom.style.marginLeft = '2%';
 bike_combine_chartDom.style.backgroundColor = '#fafafab6';
 bike_combine_chartDom.style.zIndex = '10';
-bike_combine_chartDom.style.display = "none"
+bike_combine_chartDom.style.display = "none";

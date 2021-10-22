@@ -80,4 +80,4 @@ tram_combine_chartDom.style.marginLeft = '5%';
 tram_combine_chartDom.style.marginTop = '2%';
 tram_combine_chartDom.style.backgroundColor = '#fafafa4b';
 tram_combine_chartDom.style.zIndex = '10';
-tram_combine_chartDom.style.display = "none"
+tram_combine_chartDom.style.display = "none";

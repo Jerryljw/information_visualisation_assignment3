@@ -82,9 +82,10 @@ if (bike_pie_option && typeof bike_pie_option === 'object') {
 }
 
 bike_pie_chartDom.style.position = 'fixed';
-bike_pie_chartDom.style.height = '80%';
-bike_pie_chartDom.style.width = '36%';
-bike_pie_chartDom.style.marginLeft = '2%';
-bike_pie_chartDom.style.backgroundColor = '#fafafab6';
+bike_pie_chartDom.style.height = '75%';
+bike_pie_chartDom.style.width = '55%';
+bike_pie_chartDom.style.marginLeft = '5%';
+bike_pie_chartDom.style.marginTop = '2%';
+bike_pie_chartDom.style.backgroundColor = '#fafafa4b';
 bike_pie_chartDom.style.zIndex = '10';
-bike_pie_chartDom.style.display = "none"
+bike_pie_chartDom.style.display = "none";

@@ -439,7 +439,7 @@ const chapters = {
             'chartid': 'bike-pie-chart-div',
             'chart': 'show',
         }
-    },
+    }
 };
 
 function showChart(chartid) {
@@ -540,5 +540,5 @@ map.on("load", async function () {
             }
         }
     };
-})
+});
 
