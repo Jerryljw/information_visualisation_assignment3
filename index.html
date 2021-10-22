@@ -20,17 +20,11 @@
         <div id="title">
             <h1>Public transport distribution, in Melbourne city</h1>
         </div>
-        <!-- <div class = "verticalchartContainer">
-            <p>dasdasdasdasdddddddddddddddddddddddddddddddddddddddd
-                ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</p>
-        </div>
-        <div class = "fullchartContainer">
-            <p>dasdasdasdasdddddddddddddddddddddddddddddddddddddddd
-                ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</p>
-        </div> -->
-        <!-- div of charts -->
+
         <div id="start-page" class="startpageContainer">
-            <h2>this is start page</h2>
+            <p> </p>
+            <h2 id="start-page-title">Getting around Melbourne city</h2>
+            <p>Easily and quickly</p>
             <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
                 sdasdasdasdas dasdasdasdasdddddddddddddddddddddddddddddddddddddddd
                 sdasdasdasdasdas
@@ -39,19 +33,24 @@
             </p>
         </div>
 
-        <div id="circle-chart" , class="fullchartContainer"></div>
-        <div id="bus-departures", class="fullchartContainer"></div>
-        <div id="bus-spw", class="fullchartContainer"></div>
+
+        <div id="tram-combine-chart-div" ,class="fullchartContainer">1</div>
+        <!-- <div id="circle-chart" , class="fullchartContainer">2</div> -->
+
+        <div id="bus-departures" , class="fullchartContainer">3</div>
+        <div id="bus-spw" , class="fullchartContainer">4</div>
+        <div id="bus-phw" , class="fullchartContainer">5</div>
+
+        <div id="bike-combine-chart-div" ,class="verticalchartContainer">6</div>
+        <div id="bike-pie-chart-div" ,class="verticalchartContainer">7</div>
 
         <div id="features">
             <!-- the start page chapter -->
             <section id="startpageSection" class="active" class="first-child">
+                <p id="start-scroll">Scroll down to see how public transport performs in Melbourne City</p>
                 <p>
-                    The City Circle tram service operates within Melbourne's central business district. The service
-                    operates
-                    in a circular route passing major tourist attractions, as well as linking with other tram, train and
-                    bus
-                    routes in and around Melbourne.
+                    Melbourne's public transport is an essential way for people to travel and live in the city.
+                    Trams, trains and buses make up an excellent public transport network.
                 </p>
             </section>
             <!-- the city circle tram chapter -->
@@ -59,18 +58,23 @@
                 <h3>City Circle tram service</h3>
                 <div>
                     <span class="point-legend-key"></span><span>city circle stop</span>
-                    <span class="line-legend-key"></span><span>route</span>
+                    <span class="line-legend-key"></span><span>city circle route</span>
                 </div>
+                <a href="https://yarratrams.com.au/using-trams/visitors-new-users/city-circle-tram/">Click to see more
+                    info</a>
                 <p>
-                    The City Circle tram service operates within Melbourne's central business district. The service
-                    operates
-                    in a circular route passing major tourist attractions, as well as linking with other tram, train and
-                    bus
-                    routes in and around Melbourne.
+                    The City Circle tram is a free and convenient way to see the major attractions of Melbourne's city
+                    centre
+                    during your journey. Major attractions include the Melbourne Museum, Parliament House, State Library
+                    Victoria, Docklands, Federation Square, SEA Life Melbourne Aquarium and the Princess Theatre.
+                </p>
+                <p>
+                    It includes 28 stops, covering most of the travel needs of people living and working in Melbourne's
+                    CBD.
                 </p>
             </section>
             <!-- the chart about city circle chart -->
-            <section id="city-circle-chart">
+            <!-- <section id="city-circle-chart">
                 <h3>City Circle tram service</h3>
                 <p>
                     The City Circle tram service operates within Melbourne's central business district. The service
@@ -79,7 +83,7 @@
                     bus
                     routes in and around Melbourne.
                 </p>
-            </section>
+            </section> -->
 
             <!-- the chapter of tram track -->
             <section id="tram-24hours">
@@ -89,10 +93,8 @@
                     <span class="line-legend-key"></span><span>tram tracks</span>
                 </div>
                 <p>
-                    This dataset is a shapefile that contains all of the tram tracks within the city of Melbourne, this
-                    data
-                    set is generally used for City of Melbourne related queries, therefor we do not hold the entire tram
-                    network
+                    Looking for a trip around Melbourne? Apart from the CBD, tram and train routes are sufficient to
+                    help people easily explore around Melbourne in a few hours or a full day.
                 </p>
             </section>
             <!-- the chart of tram track -->
@@ -113,9 +115,12 @@
                     <span class="point-legend-key"></span><span>bus stops</span>
                 </div>
                 <p>
-                    This data contains locations of train stations and their accessibility information, such as hearing
-                    aid
-                    information.
+                    Travelling within the city currently relies on the tram network and train network, but Melbourne's
+                    distant suburbs rely heavily on the Bus for travel.
+                </p>
+                <p>
+                    Unlike Melbourne's train and tram networks, the Melbourne government allows buses to be operated by
+                    private companies and to compete freely in the marketplace
                 </p>
             </section>
             <!-- the chart of bus week-->
@@ -138,14 +143,10 @@
                     <span class="line-legend-key"></span><span>tram tracks</span>
                 </div>
                 <p>
-                    Contains the bike share dock locations that were deployed across Melbourne as part of the Melbourne
-                    Bike
-                    Share Program.
-                    Melbourne Bike Share is a joint RACV/Victorian Government bicycle hire scheme. It allows commuters
-                    to
-                    hire a bike from a dock location and return it to another dock location in the city. This dataset
-                    contains the bike share dock locations and capacity across the city.
+                    Melbourne's buses also provide a feeder to Melbourne's train and tram network. All you need is a
+                    Myki card to travel on almost all trains, trams and buses in Melbourne
                 </p>
+                More info about <a href="https://www.ptv.vic.gov.au/">Myki</a>
             </section>
             <!-- the chart of bus day chapter -->
             <section id="bus-day-chart">
@@ -197,19 +198,24 @@
 
     </div>
 
-    <!-- <div id="container2" class = "contains">
-        <div id = "test">
+    <div id="container2" class="contains">
+        <div id="test">
             <p>
                 sdsadasdsaddddddddddddddddddddddddddddd
             </p>
 
-        </div> -->
+        </div>
 
     </div>
     <script src="./js/scrollmap.js"></script>
-    <script src="./js/testchart.js"></script>
+    <script src="./js/tram_combine.js"></script>
+
     <script src="./js/bus_departures.js"></script>
     <script src="./js/bus_services_pop_week.js"></script>
+    <script src="./js/bus_population_hourly_week.js"></script>
+
+    <script src="./js/bike_combine.js"></script>
+    <script src="./js/bike_pie.js"></script>
 </body>
 
 </html>

@@ -69,50 +69,50 @@ const chapters = {
             'chart': 'hide',
         }
     },
-    'city-circle-chart': {
-        locations: {
-            bearing: -10.82,
-            center: [144.966221, -37.814378],
-            zoom: 13.87,
-            pitch: 47.51,
-        },
-        layers: {
-            'route': {
-                "id": "city-circle-tram-route1",
-                "type": "line",
-                "source": {
-                    "type": "vector",
-                    "url": "mapbox://jerryluojiawei.bhbyhqip"
-                },
-                "source-layer": "City_Circle_tram_route-3yiao0",
-                "paint": {
-                    'line-color': "#99CCCC",
-                    'line-width': 2,
-                },
-                'layout': {
-                    'line-join': 'round',
-                    'line-cap': 'round'
-                },
-            },
-            'stops': {
-                "id": "city-circle-tram-stops1",
-                "type": "circle",
-                "source": {
-                    "type": "vector",
-                    "url": "mapbox://jerryluojiawei.bbm7j752"
-                },
+    // 'city-circle-chart': {
+    //     locations: {
+    //         bearing: -10.82,
+    //         center: [144.966221, -37.814378],
+    //         zoom: 13.87,
+    //         pitch: 47.51,
+    //     },
+    //     layers: {
+    //         'route': {
+    //             "id": "city-circle-tram-route1",
+    //             "type": "line",
+    //             "source": {
+    //                 "type": "vector",
+    //                 "url": "mapbox://jerryluojiawei.bhbyhqip"
+    //             },
+    //             "source-layer": "City_Circle_tram_route-3yiao0",
+    //             "paint": {
+    //                 'line-color': "#99CCCC",
+    //                 'line-width': 2,
+    //             },
+    //             'layout': {
+    //                 'line-join': 'round',
+    //                 'line-cap': 'round'
+    //             },
+    //         },
+    //         'stops': {
+    //             "id": "city-circle-tram-stops1",
+    //             "type": "circle",
+    //             "source": {
+    //                 "type": "vector",
+    //                 "url": "mapbox://jerryluojiawei.bbm7j752"
+    //             },
 
-                "source-layer": "City_Circle_tram_stops-bwiu9r",
-                "paint": {
-                    'circle-color': "#336699"
-                }
-            },
-        },
-        setting: {
-            'chartid': 'circle-chart',
-            'chart': 'show',
-        }
-    },
+    //             "source-layer": "City_Circle_tram_stops-bwiu9r",
+    //             "paint": {
+    //                 'circle-color': "#336699"
+    //             }
+    //         },
+    //     },
+    //     setting: {
+    //         'chartid': 'circle-chart',
+    //         'chart': 'show',
+    //     }
+    // },
     'tram-24hours': {
         locations: {
             center: [144.962015, -37.818984],
@@ -121,7 +121,6 @@ const chapters = {
             pitch: 31.52
         },
         layers: {
-
             'tracks': {
                 "id": "tram-24hours-tracks",
                 "type": "line",
@@ -161,23 +160,54 @@ const chapters = {
     },
     'tram-24hours-chart': {
         locations: {
-            bearing: 0.00,
-            center: [144.952990, -37.821039],
-            zoom: 12.12,
-            pitch: 0.00,
+            center: [144.962015, -37.818984],
+            bearing: 35.55,
+            zoom: 13.53,
+            pitch: 31.52
         },
         layers: {
+            'tracks': {
+                "id": "tram-24hours-track1",
+                "type": "line",
+                "source": {
+                    "type": "vector",
+                    "url": "mapbox://jerryluojiawei.9973anzf"
+                },
+
+                "source-layer": "Tram_tracks-71l9ar",
+                "paint": {
+                    'line-color': "#99CCCC",
+                    'line-width': 2,
+                },
+                'layout': {
+                    'line-join': 'round',
+                    'line-cap': 'round'
+                },
+            },
+            'stops': {
+                "id": "tram-24hours-stops1",
+                "type": "circle",
+                "source": {
+                    "type": "vector",
+                    "url": "mapbox://jerryluojiawei.bbm7j752"
+                },
+
+                "source-layer": "City_Circle_tram_stops-bwiu9r",
+                "paint": {
+                    'circle-color': "#336699"
+                }
+            },
         },
         setting: {
-            'chartid': 'start-page',
-            'chart': 'hide',
+            'chartid': 'tram-combine-chart-div',
+            'chart': 'show',
         }
     },
     'bus-week': {
         locations: {
             bearing: 0,
             center: [144.952990, -37.821039],
-            zoom:  12.12,
+            zoom: 12.12,
             pitch: 0
         }, layers: {
             'stops': {
@@ -317,8 +347,8 @@ const chapters = {
             },
         },
         setting: {
-            'chartid': 'bus-day-chart',
-            'chart': 'hide',
+            'chartid': 'bus-phw',
+            'chart': 'show',
         }
     },
     'bus-day-chart': {
@@ -362,8 +392,8 @@ const chapters = {
             },
         },
         setting: {
-            'chartid': 'bike-trend-chart',
-            'chart': 'hide',
+            'chartid': 'bike-combine-chart-div',
+            'chart': 'show',
         }
     },
     'bike-ranks': {
@@ -406,8 +436,8 @@ const chapters = {
             },
         },
         setting: {
-            'chartid': 'bike-ranks-chart',
-            'chart': 'hide',
+            'chartid': 'bike-pie-chart-div',
+            'chart': 'show',
         }
     },
 };

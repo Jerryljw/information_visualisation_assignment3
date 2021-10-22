@@ -7,6 +7,11 @@ var bus_departures_option;
 // Most of the buses are proportional to the number of people, but
 // it seems that we can slightly reduce the number of buses from 9am to 11am.
 bus_departures_option = {
+  color: ['#EE8434', '#F0D656'],
+  title: {
+    text: 'Number of Bus Departures & Population',
+    left: 'center'
+  },
   tooltip: {
     trigger: 'axis',
     axisPointer: {
@@ -18,6 +23,7 @@ bus_departures_option = {
   },
   legend: {
     selectedMode:false,
+    top: 23,
     data: [
       'Number of Departures',
       'Weekdays (Population)',
@@ -73,6 +79,16 @@ bus_departures_option = {
       name: 'Number of Departures',
       type: 'bar',
       barWidth: '40%',
+      color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+        {
+          offset: 0,
+          color: '#61a0a8'
+        },
+        {
+          offset: 1,
+          color: '#ffff'
+        }
+      ]),
       data: [
         428, 27, 52, 91, 238, 857, 1607, 2366, 2625, 2652, 2680, 2688, 2674,
         2610, 2669, 2751, 2876, 2815, 2413, 1909, 1570, 1236, 809, 1009
@@ -99,9 +115,8 @@ bus_departures_option = {
   ]
 };
 
-if (bus_departures_option && typeof bus_departures_option === 'object') {
-    bus_departures_myChart.setOption(bus_departures_option);
-  }
+
+bus_departures_myChart.setOption(bus_departures_option);
 
 bus_departures_chartDom.style.position = 'fixed';
 bus_departures_chartDom.style.height = '75%';
