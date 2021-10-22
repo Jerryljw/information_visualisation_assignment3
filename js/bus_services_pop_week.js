@@ -8,7 +8,10 @@ var bus_spw_option;
 // on Friday and Saturday nights
 bus_spw_option = {
   title: {
-    text: 'Route Services & Population'
+    top:20,
+    text: 'Route Services & Population',
+    left: 'center'
+
   },
   color: ['#EE8434'],
   tooltip: {

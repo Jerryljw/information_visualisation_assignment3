@@ -204,6 +204,51 @@ const chapters = {
             'chart': 'show',
         }
     },
+    'tram-24hours-chart2': {
+        locations: {
+            center: [144.962015, -37.818984],
+            bearing: 35.55,
+            zoom: 13.53,
+            pitch: 31.52
+        },
+        layers: {
+            'tracks': {
+                "id": "tram-24hours-track2",
+                "type": "line",
+                "source": {
+                    "type": "vector",
+                    "url": "mapbox://jerryluojiawei.9973anzf"
+                },
+
+                "source-layer": "Tram_tracks-71l9ar",
+                "paint": {
+                    'line-color': "#99CCCC",
+                    'line-width': 2,
+                },
+                'layout': {
+                    'line-join': 'round',
+                    'line-cap': 'round'
+                },
+            },
+            'stops': {
+                "id": "tram-24hours-stops2",
+                "type": "circle",
+                "source": {
+                    "type": "vector",
+                    "url": "mapbox://jerryluojiawei.bbm7j752"
+                },
+
+                "source-layer": "City_Circle_tram_stops-bwiu9r",
+                "paint": {
+                    'circle-color': "#336699"
+                }
+            },
+        },
+        setting: {
+            'chartid': 'tram-combine-chart-div2',
+            'chart': 'show',
+        },
+    },
     'bus-week': {
         locations: {
             bearing: 0,
@@ -328,7 +373,6 @@ const chapters = {
             zoom: 13.17,
             pitch: 38.50
         }, layers: {
-
             'tracks': {
                 "id": "bus-day-tracks",
                 "type": "line",

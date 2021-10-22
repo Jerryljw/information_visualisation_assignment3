@@ -3,11 +3,16 @@ var bike_pie_myChart = echarts.init(bike_pie_chartDom);
 var bike_pie_option;
 
 bike_pie_option = {
+    title: {
+        text: 'How people feelings about cycling in Melbourne',
+        left: 'center',
+    },
     tooltip: {
         trigger: 'item',
         formatter: '{a} <br/>{b}: {d}%'
     },
     legend: {
+        top:20,
         selectedMode:false,
         data: [
             'Very comfortable',
@@ -41,7 +46,8 @@ bike_pie_option = {
                 { value: 16, name: 'Neither' },
                 { value: 6, name: 'Uncomfortable' },
                 { value: 5, name: 'Very uncomfortable' }
-            ]
+            ],
+            center:['50%','60%']
         },
         {
             name: "People's Will",
@@ -88,7 +94,8 @@ bike_pie_option = {
                 { value: 43, name: 'About the same' },
                 { value: 4, name: 'Worse' },
                 { value: 1, name: 'Much worse' }
-            ]
+            ],
+            center:['50%','60%']
         }
     ]
 };

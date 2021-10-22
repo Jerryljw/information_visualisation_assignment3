@@ -4,71 +4,78 @@ var tram_combine_option;
 
 
 tram_combine_option = {
-  tooltip: {
-      trigger: 'axis'
+    title: {
+        text: 'Number of Tram Departures and Population',
+        left: 'center'
     },
+
+    tooltip: {
+        trigger: 'axis'
+    },
+
     legend: {
-      data: ['Pedestrain Counts', 'Total departures'],
-      selectedMode:false
+        top: 20,
+        data: ['Population', 'Total Departures'],
+        selectedMode: false
     },
     xAxis: [
-      {
-        type: 'category',
-        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-        axisPointer: {
-          type: 'shadow'
+        {
+            type: 'category',
+            data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+            axisPointer: {
+                type: 'shadow'
+            }
         }
-      }
     ],
     yAxis: [
-      {
-        type: 'value',
-        name: 'Pedestrain Counts',
-        min: 0,
-        max: 120,
-        interval: 30,
-        axisLabel: {
-          formatter: '{value} million'
+        {
+            type: 'value',
+            name: 'Population',
+            min: 0,
+            max: 120,
+            interval: 30,
+            axisLabel: {
+                formatter: '{value} million'
+            }
+        },
+        {
+            type: 'value',
+            name: 'Total Departures',
+            min: 0,
+            max: 120,
+            interval: 30
         }
-      },
-      {
-        type: 'value',
-        name: 'Total departures',
-        min: 0,
-        max: 120,
-        interval: 30
-      }
     ],
     series: [
-      {
-        name: 'Pedestrain Counts',
-        type: 'bar',
-        data: [ 
-        92, 
-        94, 
-        96, 
-        100, 
         {
-          value: 111,
-           itemStyle: {
-         color: '#8470FF'
-      }
-      },83, 71]
-       },
-      {
-        name: 'Total departures',
-        type: 'line',
-        yAxisIndex: 1,
-        lineStyle:{
-        color:'#8470FF'
+            name: 'Population',
+            type: 'bar',
+            data: [
+                92,
+                94,
+                96,
+                100,
+                {
+                    value: 111,
+                    itemStyle: {
+                        color: '#6A5ACD'
+                    }
+                }, 83, 71],
         },
-          itemStyle : {
-          normal :{ color:'#8470FF'}
-                              },
-        data: [115, 115, 115, 115, 115, 77, 60]
-      }
+        {
+            name: 'Total Departures',
+            type: 'line',
+            yAxisIndex: 1,
+            lineStyle: {
+                color: '#483D8B'
+            },
+            itemStyle: {
+                normal: {color: '#483D8B'}
+            },
+            data: [115, 115, 115, 115, 115, 77, 60]
+        }
     ]
-  };
+};
 
 
 tram_combine_myChart.setOption(tram_combine_option);
