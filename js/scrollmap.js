@@ -303,7 +303,7 @@ const chapters = {
         layers: {
         },
         setting: {
-            'chartid': 'bus-departures',
+            'chartid': 'bus-phw',
             'chart': 'show',
         }
     },
@@ -317,7 +317,7 @@ const chapters = {
         layers: {
         },
         setting: {
-            'chartid': 'bus-phw',
+            'chartid': 'bus-departures',
             'chart': 'show',
         }
     },
