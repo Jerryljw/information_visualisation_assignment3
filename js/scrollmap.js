@@ -2,7 +2,7 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiamVycnlsdW9qaWF3ZWkiLCJhIjoiY2t0M3c4dHh0MGNvNTJ2czBxZzBucXFpdCJ9.8xcx_a2UWKPMKVgDaRxjGA';
 const map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/light-v10',
+    style: 'mapbox://styles/mapbox/dark-v9',
     bearing: 0.00,
     center: [144.952990, -37.821039],
     zoom: 12.12,
@@ -25,6 +25,51 @@ const chapters = {
             'chart': 'show',
         }
     },
+    'tram-24hours': {
+        locations: {
+            center: [144.962015, -37.818984],
+            bearing: 35.55,
+            zoom: 13.53,
+            pitch: 31.52
+        },
+        layers: {
+            'tracks': {
+                "id": "tram-24hours-tracks",
+                "type": "line",
+                "source": {
+                    "type": "vector",
+                    "url": "mapbox://jerryluojiawei.9973anzf"
+                },
+
+                "source-layer": "Tram_tracks-71l9ar",
+                "paint": {
+                    'line-color': "#99CCCC",
+                    'line-width': 2,
+                },
+                'layout': {
+                    'line-join': 'round',
+                    'line-cap': 'round'
+                },
+            },
+            'stops': {
+                "id": "tram-24hours-stops",
+                "type": "circle",
+                "source": {
+                    "type": "vector",
+                    "url": "mapbox://jerryluojiawei.bbm7j752"
+                },
+
+                "source-layer": "City_Circle_tram_stops-bwiu9r",
+                "paint": {
+                    'circle-color': "#336699"
+                }
+            },
+        },
+        setting: {
+            'chartid': 'tram-chart',
+            'chart': 'hide',
+        }
+    },
     'city-circle-tram': {
         locations: {
             bearing: -10.82,
@@ -43,7 +88,7 @@ const chapters = {
                 "source-layer": "City_Circle_tram_route-3yiao0",
                 "paint": {
                     'line-color': "#99CCCC",
-                    'line-width': 2,
+                    'line-width': 3,
                 },
                 'layout': {
                     'line-join': 'round',
@@ -113,51 +158,7 @@ const chapters = {
     //         'chart': 'show',
     //     }
     // },
-    'tram-24hours': {
-        locations: {
-            center: [144.962015, -37.818984],
-            bearing: 35.55,
-            zoom: 13.53,
-            pitch: 31.52
-        },
-        layers: {
-            'tracks': {
-                "id": "tram-24hours-tracks",
-                "type": "line",
-                "source": {
-                    "type": "vector",
-                    "url": "mapbox://jerryluojiawei.9973anzf"
-                },
 
-                "source-layer": "Tram_tracks-71l9ar",
-                "paint": {
-                    'line-color': "#99CCCC",
-                    'line-width': 2,
-                },
-                'layout': {
-                    'line-join': 'round',
-                    'line-cap': 'round'
-                },
-            },
-            'stops': {
-                "id": "tram-24hours-stops",
-                "type": "circle",
-                "source": {
-                    "type": "vector",
-                    "url": "mapbox://jerryluojiawei.bbm7j752"
-                },
-
-                "source-layer": "City_Circle_tram_stops-bwiu9r",
-                "paint": {
-                    'circle-color': "#336699"
-                }
-            },
-        },
-        setting: {
-            'chartid': 'tram-chart',
-            'chart': 'hide',
-        }
-    },
     'tram-24hours-chart': {
         locations: {
             center: [144.962015, -37.818984],
@@ -306,6 +307,20 @@ const chapters = {
             'chart': 'show',
         }
     },
+    'bus-week-chart2': {
+        locations: {
+            bearing: 0.00,
+            center: [144.952990, -37.821039],
+            zoom: 12.12,
+            pitch: 0.00,
+        },
+        layers: {
+        },
+        setting: {
+            'chartid': 'bus-phw',
+            'chart': 'show',
+        }
+    },
     'bus-day': {
         locations: {
             bearing: 0,
@@ -347,8 +362,6 @@ const chapters = {
             },
         },
         setting: {
-            'chartid': 'bus-phw',
-            'chart': 'show',
         }
     },
     'bus-day-chart': {
@@ -368,7 +381,7 @@ const chapters = {
     'bike-trends': {
         locations: {
             bearing: 0,
-            center: [144.943218, -37.812152],
+            center: [144.933218, -37.812152],
             zoom: 11.75,
             pitch: 0,
         }, layers: {
@@ -399,7 +412,7 @@ const chapters = {
     'bike-ranks': {
         locations: {
             bearing: 0,
-            center: [144.943218, -37.812152],
+            center: [144.933218, -37.812152],
             zoom: 11.75,
             pitch: 0,
         }, layers: {

@@ -1,61 +1,66 @@
 
 body {
-    height: 100%; 
+    height: 100%;
     margin: 0;
-     padding: 0; 
-    }
+    padding: 0;
+    color: #fafafa;
+    font-family: sans-serif;
+}
 
 #title {
     width: 100%;
     height: 10%;
     font-family: sans-serif;
-    background: linear-gradient(to bottom, #fafafa00 0%, #fafafa4f 30%);
-    opacity:0.95;
+    /*background: linear-gradient(to bottom, #fafafa00 0%, #fafafa4f 30%);*/
+    opacity: 0.95;
     text-align: center;
 }
-#map-container{
+
+#map-container {
     position: relative;
     width: 100%;
     height: 100%;
 }
-.fullchartContainer{
-    position:fixed;
+
+.fullchartContainer {
+    position: fixed;
     height: 75%;
-    width: 65%;
+    width: 60%;
     margin-left: 5%;
     margin-top: 2%;
     /* color: rgba(162, 162, 230, 0.459); */
     background-color: #fafafab6;
     z-index: 10;
- }
- .startpageContainer{
-    position:fixed;
+}
+
+.startpageContainer {
+    position: fixed;
     height: 84%;
-    width: 70%;
+    width: 69%;
     margin-left: 1%;
     color: rgb(0, 0, 0);
     background-color: #fafafa4b;
     z-index: 10;
-    background: linear-gradient(to bottom, #fafafa, #fafafa5b), 
+    background: linear-gradient(to bottom, #fafafa, #fafafa5b),
     url("https://yarratrams.com.au/media/1462/yt_image_rolling_stock_trams_w8_class_4_thumb_1200.jpg");
- 
-  text-align: center
- }
 
- .verticalchartContainer{
-    position:fixed;
+    text-align: center
+}
+
+.verticalchartContainer {
+    position: fixed;
     height: 80%;
-    width: 36%;
+    width: 45%;
     margin-left: 2%;
     /* color: rgba(0, 0, 255, 0.459); */
     background-color: #fafafab6;
     z-index: 10;
- }
+}
 
-#container2{
+#container2 {
     position: relative;
     width: 100%;
-    height: 100ch;
+    height: calc(100vh);
     background-color: rgb(255, 255, 255);
     z-index: 11;
 }

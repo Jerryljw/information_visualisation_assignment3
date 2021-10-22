@@ -153,8 +153,8 @@ if (bike_combine_option && typeof bike_combine_option === 'object') {
 
 bike_combine_chartDom.style.position = 'fixed';
 bike_combine_chartDom.style.height = '80%';
-bike_combine_chartDom.style.width = '36%';
+bike_combine_chartDom.style.width = '45%';
 bike_combine_chartDom.style.marginLeft = '2%';
 bike_combine_chartDom.style.backgroundColor = '#fafafab6';
 bike_combine_chartDom.style.zIndex = '10';
-bike_combine_chartDom.style.display = "none"
+bike_combine_chartDom.style.display = "none";
