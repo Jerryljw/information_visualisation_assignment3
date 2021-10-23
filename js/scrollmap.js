@@ -496,7 +496,20 @@ const chapters = {
             'chartid': 'bike-pie-chart-div',
             'chart': 'show',
         }
-    }
+    },
+    'end-chapter': {
+        locations: {
+            bearing: 0.00,
+            center: [144.952990, -37.821039],
+            zoom: 12.12,
+            pitch: 0.00,
+        },
+        layers: {
+        },
+        setting: {
+            'chart': 'hide',
+        }
+    },
 };
 
 function showChart(chartid) {
