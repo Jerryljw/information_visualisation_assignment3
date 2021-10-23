@@ -31,7 +31,7 @@ section:first-child{
 }
 section:last-child {
    border-bottom: none;
-   margin-bottom: 500px;
+   padding-bottom: 35rem;
 }
 .point-legend-key {
    background-color: #336699;
