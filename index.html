@@ -5,100 +5,109 @@
     <meta charset="utf-8">
     <title>Scroll</title>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-stat@latest/dist/ecStat.min.js"></script>
     <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js"></script>
-    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css" rel="stylesheet"/>
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css" rel="stylesheet" />
     <link href="./css/style.css" rel="stylesheet">
     <link href="./css/scrollmap.css" rel="stylesheet">
 </head>
 
 <body>
 
-<div id="map-container">
+    <div id="map-container">
 
-    <div id="map"></div>
+        <div id="map"></div>
 
-    <div id="title">
-        <h1>Transport Distribution in Melbourne</h1>
-    </div>
-    <span class="spanEmphasis"></span>
+        <div id="title">
+            <h1>Transport Distribution in Melbourne</h1>
+        </div>
+        <span class="spanEmphasis"></span>
 
-    <div id="start-page" class="startpageContainer">
-        <h2 id="start-page-title">Getting around Melbourne city</h2>
-        <p class="start-slogan">Easily and quickly</p>
-        <p class="start-para">
-            A world-class transport system is critical to a liveable, prosperous and sustainable city. Melbourne as a
-            world-class city must be supported by an excellent transport system to accommodate the increased number of
-            people that living, working and visiting Melbourne. Here we present tram, bus, bicycle as three popular
-            transport options in Central Melbourne and provide some suggestions for better integration of transportation
-            into people's lives and the convenience of people’s lives.
-        </p>
-    </div>
-
-
-    <div id="tram-combine-chart-div" class="fullchartContainer"></div>
-    <div id="tram-combine-chart-div2" class="fullchartContainer"></div>
-    <div id="bus-departures" class="fullchartContainer"></div>
-
-    <div id="bus-spw" class="fullchartContainer"></div>
-
-    <div id="bus-phw" class="fullchartContainer"></div>
-
-
-    <div id="bike-combine-chart-div" class="verticalchartContainer"></div>
-
-    <div id="bike-pie-chart-div" class="verticalchartContainer"></div>
-
-    <div id="features">
-        <!-- the start page chapter -->
-        <section id="startpageSection" class="active" class="first-child">
-            <p id="start-scroll" style="font-size: 2.0em;"><span class="spanEmphasis">Scroll down</span> to see how
-                public transport performs in Melbourne
-                City</p>
-            <p>
-                Melbourne's public transport is an essential way for people to travel and live in the city.
-                <span class="spanEmphasis">Trams, trains and buses</span> make up an excellent public transport network.
+        <div id="start-page" class="startpageContainer">
+            <h2 id="start-page-title">Getting around Melbourne city</h2>
+            <p class="start-slogan">Easily and quickly</p>
+            <p class="start-para">
+                <span class="spanEmphasis">Buses, Tram and Bike</span>
             </p>
-        </section>
-        <!-- the chapter of tram track -->
-        <section id="tram-24hours">
-            <h3>Tram Overview</h3>
-            <div>
-                <span class="point-legend-key"></span><span>city circle stop</span>
-                <span class="line-legend-key"></span><span>tram tracks</span>
-            </div>
-            <p>
-                The map contains all tram tracks within the city of Melbourne. The Melbourne tram is the <span
-                    class="spanEmphasis">second most</span>
-                used form of public transport in Melbourne, and the <span class="spanEmphasis">world’s largest</span>
-                tram network with nearly 500 trams
-                on <span class="spanEmphasis2">24 routes, and 1763 tram stops</span>. Providing services to almost <span
-                    class="spanEmphasis2">3
-                million passengers</span> each year.
+            <p>Take account for <span class="spanEmphasis">half</span> of Central Melbourne transport travelling per
+                year.
+
             </p>
-        </section>
-        <!-- the city circle tram chapter -->
-        <section id="city-circle-tram">
-            <h3>City Circle tram service</h3>
-            <div>
-                <span class="point-legend-key"></span><span>city circle stop</span>
-                <span class="line-legend-key"></span><span>city circle route</span>
-            </div>
-            <a href="https://yarratrams.com.au/using-trams/visitors-new-users/city-circle-tram/">Click to see more
-                info</a>
-            <p>
-                The most popular route – <span class="spanEmphasis">City Circle Tram (route 35)</span> is a free and
-                Convenient way to see the major
-                attractions of central Melbourne, operating in a circular route and linking with other tram, trains and
-                bus routes in and around Melbourne.
+            <p>Tram and Buses provide services to around <span class="spanEmphasis">4 million passengers</span>
+
             </p>
-            <p>
-                It includes <span class="spanEmphasis2">28 stops</span>, covering most of the travel needs of people
-                living and working in Melbourne's
-                CBD.
-            </p>
-        </section>
-        <!-- the chart about city circle chart -->
-        <!-- <section id="city-circle-chart">
+            <p>And have <span class="spanEmphasis">thousands of stops</span> that take passengers
+            </p><p>to every corner in central Melbourne.</p>
+        </div>
+
+
+        <div id="tram-combine-chart-div" class="fullchartContainer"></div>
+        <div id="tram-combine-chart-div2" class="fullchartContainer"></div>
+        <div id="bus-departures" class="fullchartContainer"></div>
+
+        <div id="bus-spw" class="fullchartContainer"></div>
+
+        <div id="bus-phw" class="fullchartContainer"></div>
+
+
+        <div id="bike-combine-chart-div" class="verticalchartContainer"></div>
+
+        <div id="bike-pie-chart-div" class="verticalchartContainer"></div>
+
+        <div id="features">
+            <!-- the start page chapter -->
+            <section id="startpageSection" class="active" class="first-child">
+                <p id="start-scroll" style="font-size: 2.0em;"><span class="spanEmphasis">Scroll down</span> to see how
+                    public transport performs in Melbourne
+                    City</p>
+                <p>
+                    Melbourne's public transport is an essential way for people to travel and live in the city.
+                    <span class="spanEmphasis">Trams, trains and buses</span> make up an excellent public transport
+                    network.
+                </p>
+            </section>
+            <!-- the chapter of tram track -->
+            <section id="tram-24hours">
+                <h3>Tram Overview</h3>
+                <div>
+                    <span class="point-legend-key"></span><span>city circle stop</span>
+                    <span class="line-legend-key"></span><span>tram tracks</span>
+                </div>
+                <p>
+                    The map contains all tram tracks within the city of Melbourne. The Melbourne tram is the <span
+                        class="spanEmphasis">second most</span>
+                    used form of public transport in Melbourne, and the <span class="spanEmphasis">world’s
+                        largest</span>
+                    tram network with nearly 500 trams
+                    on <span class="spanEmphasis2">24 routes, and 1763 tram stops</span>. Providing services to almost
+                    <span class="spanEmphasis2">3
+                        million passengers</span> each year.
+                </p>
+            </section>
+            <!-- the city circle tram chapter -->
+            <section id="city-circle-tram">
+                <h3>City Circle tram service</h3>
+                <div>
+                    <span class="point-legend-key"></span><span>city circle stop</span>
+                    <span class="line-legend-key"></span><span>city circle route</span>
+                </div>
+                <a href="https://yarratrams.com.au/using-trams/visitors-new-users/city-circle-tram/">Click to see more
+                    info</a>
+                <p>
+                    The most popular route – <span class="spanEmphasis">City Circle Tram (route 35)</span> is a free and
+                    Convenient way to see the major
+                    attractions of central Melbourne, operating in a circular route and linking with other tram, trains
+                    and
+                    bus routes in and around Melbourne.
+                </p>
+                <p>
+                    It includes <span class="spanEmphasis2">28 stops</span>, covering most of the travel needs of people
+                    living and working in Melbourne's
+                    CBD.
+                </p>
+            </section>
+            <!-- the chart about city circle chart -->
+            <!-- <section id="city-circle-chart">
             <h3>City Circle tram service</h3>
             <p>
                 The City Circle tram service operates within Melbourne's central business district. The service
@@ -110,146 +119,156 @@
         </section> -->
 
 
-        <!-- the chart of tram track -->
-        <section id="tram-24hours-chart">
-            <h3>Improvement Direction</h3>
-            <div>
-                <span class="point-legend-key"></span><span>city circle stop</span>
-                <span class="line-legend-key"></span><span>tram tracks</span>
-            </div>
-            <p>
-                With the comparison between <span class="spanEmphasis">pedestrian counts and the tram departure frequency</span>,
-                there is a huge gap on
-                <span class="spanEmphasis2">Friday</span>. Which the frequency of departure does not meet the need,
-                therefore, specifically on Friday, the
-                tram departure frequency should increase to meet the high volume of traffic.
-            </p>
-        </section>
-        <section id="tram-24hours-chart2">
-            <h3>Improvement Direction</h3>
-            <div>
-                <span class="point-legend-key"></span><span>city circle stop</span>
-                <span class="line-legend-key"></span><span>tram tracks</span>
-            </div>
-            <p>
-                With the detail look on Friday by <span class="spanEmphasis">different timeslot</span>, the time between
-                <span class="spanEmphasis2">5pm – 8pm</span> shows high volume of
-                people flow, providing suggestions that at this period, tram departure frequency should be increased.
-            </p>
-        </section>
-        <!-- the chapter of bus with week -->
-        <section id="bus-week">
-            <h3>Bus stops in Melbourne</h3>
-            <div>
-                <span class="point-legend-key"></span><span>bus stops</span>
-            </div>
-            <p>
-                Travelling within the city currently relies on the tram network and train network, but Melbourne's
-                distant suburbs rely heavily on the Bus for travel.
-            </p>
-            <p>
-                Unlike Melbourne's train and tram networks, the Melbourne government
-                allows <span class="spanEmphasis">buses</span>
-                to be operated by
-                private companies and to compete freely in the marketplace
-            </p>
-        </section>
-        <!-- the chart of bus week-->
-        <section id="bus-week-chart">
-            <h3>Compare bus capacity and pedestrian flow during a day</h3>
-            <p>
-                There are three distinct peaks during the <span class="spanEmphasis">working day</span>.
-                However, the image of the weekend is a little more relaxed,
-                and people prefer to spend the evening outside, especially
-                on <span class="spanEmphasis">Friday and Saturday nights</span>
-            </p>
-        </section>
-        <!-- the chapter of bus day -->
-        <section id="bus-week-chart2">
-            <p>
-                The bar chart shows <span class="spanEmphasis">how many buses</span> (including night buses, etc.)
-                start their first trip in each hour.
-                Most of the buses are proportional to the number of people, but
-                it seems that we can slightly reduce the number of buses from 9am to 11am.
-            </p>
+            <!-- the chart of tram track -->
+            <section id="tram-24hours-chart">
+                <h3>Improvement Direction</h3>
+                <div>
+                    <span class="point-legend-key"></span><span>city circle stop</span>
+                    <span class="line-legend-key"></span><span>tram tracks</span>
+                </div>
+                <p>
+                    With the comparison between <span class="spanEmphasis">pedestrian counts and the tram departure
+                        frequency</span>,
+                    there is a huge gap on
+                    <span class="spanEmphasis2">Friday</span>. Which the frequency of departure does not meet the need,
+                    therefore, specifically on Friday, the
+                    tram departure frequency should increase to meet the high volume of traffic.
+                </p>
+            </section>
+            <section id="tram-24hours-chart2">
+                <h3>Improvement Direction</h3>
+                <div>
+                    <span class="point-legend-key"></span><span>city circle stop</span>
+                    <span class="line-legend-key"></span><span>tram tracks</span>
+                </div>
+                <p>
+                    With the detail look on Friday by <span class="spanEmphasis">different timeslot</span>, the time
+                    between
+                    <span class="spanEmphasis2">5pm – 8pm</span> shows high volume of
+                    people flow, providing suggestions that at this period, tram departure frequency should be
+                    increased.
+                </p>
+            </section>
+            <!-- the chapter of bus with week -->
+            <section id="bus-week">
+                <h3>Bus stops in Melbourne</h3>
+                <div>
+                    <span class="point-legend-key"></span><span>bus stops</span>
+                </div>
+                <p>
+                    Travelling within the city currently relies on the tram network and train network, but Melbourne's
+                    distant suburbs rely heavily on the Bus for travel.
+                </p>
+                <p>
+                    Unlike Melbourne's train and tram networks, the Melbourne government
+                    allows <span class="spanEmphasis">buses</span>
+                    to be operated by
+                    private companies and to compete freely in the marketplace
+                </p>
+            </section>
+            <!-- the chart of bus week-->
+            <section id="bus-week-chart">
+                <h3>Compare bus capacity and pedestrian flow during a day</h3>
+                <p>
+                    There are three distinct peaks during the <span class="spanEmphasis">working day</span>.
+                    However, the image of the weekend is a little more relaxed,
+                    and people prefer to spend the evening outside, especially
+                    on <span class="spanEmphasis">Friday and Saturday nights</span>
+                </p>
+            </section>
+            <!-- the chapter of bus day -->
+            <section id="bus-week-chart2">
+                <p>
+                    The bar chart shows <span class="spanEmphasis">how many buses</span> (including night buses, etc.)
+                    start their first trip in each hour.
+                    Most of the buses are proportional to the number of people, but
+                    it seems that we can slightly reduce the number of buses from 9am to 11am.
+                </p>
 
-        </section>
-        <section id="bus-day">
-            <h3>Melbourne's bus and tram tracks covered</h3>
-            <div>
-                <span class="point-legend-key"></span><span>bus stops</span>
-                <span class="line-legend-key"></span><span>tram tracks</span>
-            </div>
-            <p>
-                Melbourne's buses also provide a feeder to Melbourne's train and tram network. All you need is a
-                <span class="spanEmphasis">Myki card</span> to travel on almost all trains, trams and buses in Melbourne
-            </p>
-            <p>More info about <a href="https://www.ptv.vic.gov.au/">Myki</a></p>
-        </section>
-        <!-- the chart of bus day chapter -->
-        <section id="bus-day-chart">
-            <p>
-                A route service is a group of trips that are displayed to riders.
-                It can be seen that during <span class="spanEmphasis">weekdays</span>,
-                foot traffic and route service
-                are proportional, but the decline in service on weekends is much greater
-                than the decline in foot traffic.
-            </p>
-        </section>
+            </section>
+            <section id="bus-day">
+                <h3>Melbourne's bus and tram tracks covered</h3>
+                <div>
+                    <span class="point-legend-key"></span><span>bus stops</span>
+                    <span class="line-legend-key"></span><span>tram tracks</span>
+                </div>
+                <p>
+                    Melbourne's buses also provide a feeder to Melbourne's train and tram network. All you need is a
+                    <span class="spanEmphasis">Myki card</span> to travel on almost all trains, trams and buses in
+                    Melbourne
+                </p>
+                <p>More info about <a href="https://www.ptv.vic.gov.au/">Myki</a></p>
+            </section>
+            <!-- the chart of bus day chapter -->
+            <section id="bus-day-chart">
+                <p>
+                    A route service is a group of trips that are displayed to riders.
+                    It can be seen that during <span class="spanEmphasis">weekdays</span>,
+                    foot traffic and route service
+                    are proportional, but the decline in service on weekends is much greater
+                    than the decline in foot traffic.
+                </p>
+            </section>
 
-        <!-- the chapter of bike trens -->
-        <section id="bike-trends">
-            <h3>So, is cycling a better way to get around than public transport?</h3>
-            <div>
-                <span class="line-legend-key"></span><span>bicycle routes</span>
-            </div>
-            <p>
-                As shown by the graph below, the <span class="spanEmphasis">number of bicycles</span> in the line during
-                the morning peak has been
-                consistently increasing over the past five years on most routes. With the residents' willingness to
-                travel low-carbon and the improvement of bicycle facilities, more and more people are participating and
-                enjoying bicycling.
-            </p>
-        </section>
+            <!-- the chapter of bike trens -->
+            <section id="bike-trends">
+                <h3>So, is cycling a better way to get around than public transport?</h3>
+                <div>
+                    <span class="line-legend-key"></span><span>bicycle routes</span>
+                </div>
+                <p>
+                    As shown by the graph below, the <span class="spanEmphasis">number of bicycles</span> in the line
+                    during
+                    the morning peak has been
+                    consistently increasing over the past five years on most routes. With the residents' willingness to
+                    travel low-carbon and the improvement of bicycle facilities, more and more people are participating
+                    and
+                    enjoying bicycling.
+                </p>
+            </section>
 
-        <!-- the chapter of bike ranks -->
-        <section id="bike-ranks" class="last-child">
-            <h3>People have mixed feelings about the cycling experience in Melbourne</h3>
-            <div>
-                <span class="point-legend-key"></span><span>bike share dock</span>
-                <span class="line-legend-key"></span><span>bicycle routes</span>
-            </div>
-            <p>
-                Those who had ridden at least once in the past year were asked about their perceptions of riding in the
-                City of Melbourne. Most of those who had ridden indicated they felt <span class="spanEmphasis2">comfortable (53%) or very
-                comfortable (20%)</span> doing so. Most riders felt that conditions for riding in the City of Melbourne had
-                remained about <span class="spanEmphasis2">the same (47%) and were better (42%)</span> over the last 12 months.
-            </p>
-        </section>
+            <!-- the chapter of bike ranks -->
+            <section id="bike-ranks" class="last-child">
+                <h3>People have mixed feelings about the cycling experience in Melbourne</h3>
+                <div>
+                    <span class="point-legend-key"></span><span>bike share dock</span>
+                    <span class="line-legend-key"></span><span>bicycle routes</span>
+                </div>
+                <p>
+                    Those who had ridden at least once in the past year were asked about their perceptions of riding in
+                    the
+                    City of Melbourne. Most of those who had ridden indicated they felt <span
+                        class="spanEmphasis2">comfortable (53%) or very
+                        comfortable (20%)</span> doing so. Most riders felt that conditions for riding in the City of
+                    Melbourne had
+                    remained about <span class="spanEmphasis2">the same (47%) and were better (42%)</span> over the last
+                    12 months.
+                </p>
+            </section>
+        </div>
+
     </div>
 
-</div>
 
+    <!--<div id="container2" class="contains">-->
+    <!--    <div id="test">-->
+    <!--        <p>-->
+    <!--            sdsadasdsaddddddddddddddddddddddddddddd-->
+    <!--        </p>-->
 
-<!--<div id="container2" class="contains">-->
-<!--    <div id="test">-->
-<!--        <p>-->
-<!--            sdsadasdsaddddddddddddddddddddddddddddd-->
-<!--        </p>-->
+    <!--    </div>-->
 
-<!--    </div>-->
+    <!--</div>-->
+    <script src="./js/scrollmap.js"></script>
+    <script src="./js/tram_combine.js"></script>
+    <script src="./js/tram_combine2.js"></script>
 
-<!--</div>-->
-<script src="./js/scrollmap.js"></script>
-<script src="./js/tram_combine.js"></script>
-<script src="./js/tram_combine2.js"></script>
+    <script src="./js/bus_departures.js"></script>
+    <script src="./js/bus_services_pop_week.js"></script>
+    <script src="./js/bus_population_hourly_week.js"></script>
 
-<script src="./js/bus_departures.js"></script>
-<script src="./js/bus_services_pop_week.js"></script>
-<script src="./js/bus_population_hourly_week.js"></script>
-
-<script src="./js/bike_combine.js"></script>
-<script src="./js/bike_pie.js"></script>
+    <script src="./js/bike_combine.js"></script>
+    <script src="./js/bike_pie.js"></script>
 </body>
 
 </html>

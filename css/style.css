@@ -14,6 +14,7 @@ body {
     /*background: linear-gradient(to bottom, #fafafa00 0%, #fafafa4f 30%);*/
     opacity: 0.95;
     text-align: center;
+    color: #ffd7ad;
 }
 
 #map-container {
@@ -82,4 +83,23 @@ body {
     color: #adffef;
     font-weight: bold;
     text-decoration: underline #adffef;
+}
+#start-page {
+    color: #333333;
+    font-size: 1.25rem;
+    
+}
+#start-page p{
+    font-weight: 900;
+}
+#start-page .spanEmphasis{
+    color: #ec7c04;
+    text-decoration: underline #ec7c04;
+    font-size: 1.5rem;
+}
+
+#start-page #start-page-title{
+    font-size: 1.75rem;
+    color: #ec7c04;
+    text-decoration: underline #ec7c04;
 }
