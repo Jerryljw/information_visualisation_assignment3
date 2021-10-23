@@ -82,7 +82,16 @@ bike_combine_option = {
             },
             color:'#2B6E78',
         }
-    ]
+    ],
+    emphasis: {
+        itemStyle: {
+            color: '#445F74', 
+            borderColor: '#fff',
+            borderWidth: 2, 
+            shadowBlur: 4,
+            shadowColor: '#445F74',
+        },
+    },
 };
 
 if (bike_combine_option && typeof bike_combine_option === 'object') {
