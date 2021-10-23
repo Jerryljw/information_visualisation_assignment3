@@ -6,6 +6,7 @@ var bike_combine_app = {};
 echarts.registerTransform(ecStat.transform.regression);
 
 bike_combine_option = {
+    
     dataset: [
         {
             source: [
@@ -63,7 +64,8 @@ bike_combine_option = {
             name: 'scatter',
             type: 'scatter',
             datasetIndex: 0,
-            symbolSize: 20
+            symbolSize: 20,
+            color:'445F74',
         },
         {
             name: 'line',
@@ -77,7 +79,8 @@ bike_combine_option = {
             encode: { label: 2, tooltip: 1 },
             lineStyle: {
                 width: 5
-            }
+            },
+            color:'#2B6E78',
         }
     ]
 };
