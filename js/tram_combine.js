@@ -6,7 +6,8 @@ var tram_combine_option;
 tram_combine_option = {
     title: {
         text: 'Number of Tram Departures and Population',
-        left: 'center'
+        left: 'center',
+        
     },
 
     tooltip: {
@@ -14,9 +15,9 @@ tram_combine_option = {
     },
 
     legend: {
-        top: 20,
         data: ['Population', 'Total Departures'],
-        selectedMode: false
+        selectedMode: false,
+        top: 20,
     },
     xAxis: [
         {

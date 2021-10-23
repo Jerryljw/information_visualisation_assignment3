@@ -7,20 +7,15 @@ tram_combine2_option = {
     title: {
         text: 'Tram Departures & Population (by time slot)',
         left: 'center',
-        top: 20
+       
       },
-    
     tooltip: {
         trigger: 'axis'
       },
-     
       legend: {
-        top:20,
         data: ['Population', 'Total Departures'],
-        selectedMode:false
-      },
-      legend: {
-        data: ['Population', 'Total Departures']
+        selectedMode: false,
+        top: 20,
       },
       xAxis: [
         {
